@@ -1,0 +1,181 @@
+[grid]
+  size: (65 x 47)
+  encodings: WALL(W) BUBBLE(x) DUST(o)
+    
+  data: """
+  WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                                                               W
+  W                    WWW WWWWWWWWWWWWWWWWWWWWW                  W
+  W                    W  o                    W                  W
+  W                    W  o                    W                  W
+  W                    W   o                   W                  W
+  W                    W   ooooo               W                  W
+  W                    W                       W                  W
+  W                    W                       W                  W
+  W                    W                       W                  W
+  W                    W                       W                  W
+  W                    W                       W                  W
+  W                    W                       W                  W
+  W                    W                       W                  W
+  W                    W                       W                  W
+  W                    W                       W                  W
+  W                    W                       W                  W
+  W                    W         o             W                  W
+  W                    W         o             W                  W
+  W                    W         o             W                  W
+  W                    W         o             W                  W
+  W                    W         o             W                  W
+  W                    W         o             W                  W
+  W                    W         o             W                  W
+  W                    W         o             W                  W
+  W                    W         o             W                  W
+  W                    W                       W                  W
+  W                    W         x             W                  W
+  W                    W        xxx            W                  W
+  W                    W       x x x           W                  W
+  W                    W         x             W                  W
+  W                    W         x             W                  W
+  W                    W                       W                  W
+  WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+  """
+
+[element]
+  name: fluffy
+  player: true
+  skin: BABA
+  position: (31,45)
+  health: 10
+  trade: CASH -> KEY red, X->Y, CASH -> PIZZA red, mourad -> tounsi
+
+  
+[element]
+  name: friend
+  skin: BADBAD
+  kind: friend
+  position: (31,28)
+  text:"""
+  salut je suis un amis
+  tu peut joueur avec les touche
+  <Q><D><I><M><P><ESPACE>
+  Q : pour quitter
+  D : pour jeter un element
+  I : pour montrer l'inventaire
+  M : pour ZOOM OUT
+  P : pour ZOOM IN
+  ESPACE : peut faire plusieur action
+           -frapper avec SWORD ou STICK
+           -ouvrir une porte avec une cle
+           -manger
+  continue vers le prochaine amis"""
+           
+
+
+[element]
+  name: friend
+  skin: BADBAD
+  kind: friend
+  position: (31,20)
+  text:"""
+  tu peut frapper un monstre et ramacer les element avec ESPACE
+  ensuite selectioner un element dans ton inventaire toujours avec ESPACE
+  tu peut jeter un element avec <D>
+  ouvre la porte avec les cles pour acceder a la nouvelle carte
+  """
+[element]
+  name: door
+  skin: DOOR
+  position: (24,15)
+  kind: obstacle
+  locked: KEY red
+  teleport : adventure
+
+[element]
+  name: red
+  skin: KEY
+  position: (40,16)
+  kind: item
+
+[element]
+  name: boite
+  skin: BOX
+  position: (44,20)
+  kind: item
+  
+[element]
+  name: durendale
+  skin: SWORD
+  position: (42,21)
+  kind: item
+  damage: 25
+  
+[element]
+  name: durendale
+  skin: SWORD
+  position: (44,18)
+  kind: item
+  damage: 15
+  
+[element]
+  name: waldo
+  skin: CRAB
+  position: (38, 24)
+  kind: enemy
+  health: 10
+  zone: (38, 24) (10 x 8)
+  behavior: stroll
+  damage: 5
+
+[element]
+  name: uoy
+  skin: BADBAD
+  position: (11, 5)
+  kind: enemy
+  health: 30
+  zone: (12, 5) (11 x 4)
+  behavior: stroll
+  damage: 4
+
+[element]
+  name: uoyuoy
+  skin: BADBAD
+  position: (11, 6)
+  kind: enemy
+  health: 30
+  zone: (12, 6) (11 x 5)
+  behavior: stroll
+  damage: 4
+
+[element]
+  name: uoyuoyuoy
+  skin: BADBAD
+  position: (12, 6)
+  kind: enemy
+  health: 30
+  zone: (11, 6) (10 x 5)
+  behavior: stroll
+  damage: 4
+
+[element]
+  name: ud
+  skin: BADBAD
+  position: (4, 5)
+  kind: enemy
+  health: 30
+  zone: (5, 5) (4 x 4)
+  behavior: stroll
+  damage: 4
+
+  
